@@ -1,0 +1,281 @@
+/*NORMALIZE*/
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/*END NORMALIZE*/
+
+
+
+
+
+/*NAVIGATION*/
+
+div.menu{
+    background: rgba(30, 37, 67, .9);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0.1);
+}
+
+.navigation{
+    list-style: none;
+    background: rgba(30, 37, 67, .9);
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.navigation a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.navigation li{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom:.2px solid rgba(255, 255, 255, .1);
+}
+
+.navigation li: last-of-type{
+    border: none;
+}
+
+.navigation a:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.menuButton{
+    display: none;
+}
+
+.menu .navigation{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease out;
+}
+
+label[for="menuButton"]{
+    display: inline-block;
+    float: right;
+    width: 60px;
+    height: 40px;
+    background-size: contain;
+    cursor: pointer;
+}
+
+label[for="menuButton"]:after{  
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    width: 15px;
+    height: 2.5px;
+    background: #fff;
+    box-shadow: 
+    0 0.3em 0 0 #fff,
+    0 0.6em 0 0 #fff;
+}
+
+.menu .menuButton:checked ~ .navigation {
+  max-height: 100vh;
+}
+
+.home{
+    display: inline-block;
+    float: left;
+    background: #fff;
+    width: 75px;
+    height: 15px;
+    padding-bottom: 26px;
+    margin: 8px;
+}
+
+.home h3{
+    color: #1e2543;
+    font-size:14px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/*END NAVIGATION*/
+
+
+
+/*GENERAL FONTS BUTTONS*/
+
+    .wrapper{
+    margin: 0;
+    background-color: #1e2543;     
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+a, .button{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900i;
+    text-align: center;
+    color: #fff;
+}
+
+h1, h2, h3, p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size:30px;
+    line-height: 32px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.button{
+    display: inline-block;
+    border: 3px solid #fff;
+    padding: 5px;   
+}
+
+.rule{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid #fff;
+}
+
+
+/*END GENERAL*/
+
+
+
+/*HEADER*/
+
+.header{
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 6%;
+    padding-right: 6%;
+    background: linear-gradient(rgba(30, 37, 67, .9), rgba(30, 37, 67, .2)), url("../assets/pic02.jpg");
+    background-size: cover;
+}
+
+.thick{
+    border-width: 3px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header .button img{
+    height: 14px;
+    margin: 4px 2px 2px 2px;
+}
+
+/*END HEADER*/
+
+
+
+/*CONTENT*/
+
+.lightbue{
+    background-image: url("../assets/pic01.jpg");
+    background-color: #74c7e6;
+}
+
+.purple{
+    background: #7d75b2, url("../assets/pic02.jpg");
+}
+
+.coral{
+    background: #e5928a, url("../assets/pic03.jpg");
+}
+
+.orange{
+    background: #dab189, url("../assets/pic04.jpg");
+}
+
+.violet{
+    background: #7d97ce, url("../assets/pic05.jpg");
+}
+
+.green{
+    background: #80ad96, url("../assets/pic06.jpg");
+}
+
+.content{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section{
+    display: inline-block;
+    height: 400px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    border: 1px dashed red;
+}
+
+
+/*END CONTENT*/
